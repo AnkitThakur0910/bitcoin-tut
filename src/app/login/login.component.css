@@ -1,0 +1,18 @@
+.body-image{
+    position: relative;
+    }
+   
+    
+    form{
+        
+            
+            align-self: center;
+             justify-content: center;
+            align-items: center;
+           position: absolute;
+           top:40%;
+           left:50%;
+           transform: translate(-50%,-50%);
+        
+        
+    }

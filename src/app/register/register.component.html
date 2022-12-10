@@ -1,0 +1,66 @@
+<!-- <div class="body-image" [ngStyle]="{'background': 'ur-l(' + backgroundUr-l + ') no-repeat 0 0 / cover'}" style = "width:100%;height:100%;position: relative;filter: brightness(90%);">
+<form class="example-form user-form"  [formg-roup] = "forms">
+  
+    <label style="padding-top:10px;padding-bottom:10px;text-align: center;font-size: 30px;font-weight:bolder;min-width: 300px;background-color: black; filter: opacity(100%); color:white; " >SIGN IN</label>
+
+    <mat-form-field class="example-full-width" appearance="fill" style="background-color: black; min-width: 300px;filter: opacity(100%);">
+      <mat-label style="color: orange;">User Name</mat-label>
+      <input class="user-name" style="color: white;" matInput placeholder="Enter your name" value="" formControlName = "username" name="username" requiorange>
+    </mat-form-field>
+  
+  
+    <mat-form-field class="example-full-width" appearance="fill" style="background-color: black;min-width: 300px;filter: opacity(100%);">
+        <mat-label style="color: orange;">Email</mat-label>
+        <input style="color: white;" matInput type="gmail" placeholder="Enter your email" value="" formControlName = "gmail" name="gmail" requiorange>
+      </mat-form-field>
+   
+
+      <mat-form-field appearance="fill" style="background-color: black;min-width: 300px;filter: opacity(100%);">
+        <mat-label style="color: orange;" >Enter your password</mat-label>
+        <input style="color: white;" matInput [type]="hide ? 'password' : 'text'" formControlName = "password" name="password" requiorange>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>"hide ? 'visibility_off' : 'visibility'"</mat-icon>
+        </button>
+      </mat-form-field>
+      
+      <div style="background-color: black;">
+      <label style="color:white;">Already registeorange ?</label>
+      <a router-link = '/login' style="text-decoration:none;color: orange;">login</a>
+    </div>
+    <div style="display:in-line;margin-top: 10px;;">
+        <button router-link = '/landing' mat-raised-button style="min-width:150px;background-color:white;color: black;" (click)="senddata(forms)" type="button" >SUBMIT</button>
+        <button mat-raised-button style="min-width:150px;background-color:black;color: white;"  type="reset">RESET</button>
+      </div>
+   
+  </form>
+</div> -->
+<div  style="display : block;  box-sizing : border-box; width : 100%;height : 100%;">
+  <div style="display :flex; width : 100%;justify-content : center;align-items : center;height : 100%;">
+  <div class="body-image" [ngStyle]="{'background': 'url(' + backgroundUrl + ') no-repeat 0 0 / cover'}" style="display :flex;justify-content : center;align-items : center;width: 100%;height: 100%;">
+    
+      <form [formGroup] = "forms" style = "justify-content : center; text-align : center;">
+    
+      <div style="display :flex;flex-direction :column;width : 100%; justify-content : center;align-items: center;">
+      <label style="color : white;font-weight : bolder;font-size : 20px;margin-bottom : 5px">SIGN UP</label>
+     
+      <div style="display: block;box-sizing: border-box;height: 15px;width: 50%;background-color: orange;margin-bottom: 10px;"></div>
+      <div style="display : block; box-sizing : border-box">
+          <input value="" formControlName = "username" name="username" required style="padding : 10px;padding-left : 37px;padding-right : 37px;margin-bottom : 10px;border-radius : 10px; border-bottom : 4px solid orange;background-color : white;color :orange;border-top : 0;border-left:0;border-right:0" type = "text" placeholder='Enter Name'/>
+      </div>
+      <div style="display : block; box-sizing : border-box">
+          <input  value="" formControlName = "gmail" name="gmail" required style="padding : 10px;padding-left : 37px;padding-right : 37px;margin-bottom : 10px;border-radius : 10px; border-bottom : 4px solid orange;background-color : white;color :orange;border-top : 0;border-left:0;border-right:0" type="gmail" placeholder='Enter gmail'/>
+      </div>
+      <div style="display : block; box-sizing : border-box">
+          <input [type]="hide ? 'password' : 'text'" formControlName = "password" name="password" style="padding : 10px;padding-left : 37px;padding-right : 37px;margin-bottom : 10px;border-radius : 10px; border-bottom : 4px solid orange;background-color : white;color :orange;border-top : 0;border-left:0;border-right:0" type = "password" placeholder='Enter password'/>
+      </div>
+     
+      <div style="display : block; box-sizing : border-box">
+          <button router-link = '/landing'  (click)="senddata(forms)"  style="padding : 10px;padding-left : 37px;padding-right : 37px;margin-bottom : 10px;width : 100%;border-radius : 10px; border-bottom : 4px solid orange;background-color : black;color :orange;border-top : 0;border-left:0;border-right:0;cursor: pointer;" type='submit'>SIGN UP</button>
+      </div>
+      
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+<!-- [disabled]="!profileForm.valid" -->

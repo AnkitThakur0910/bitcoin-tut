@@ -1,0 +1,207 @@
+
+
+.landing{
+    position: relative;
+    display:inline-block;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter : brightness(60%);
+}
+.overwrite{
+    
+    text-align : center;
+    justify-content: center;
+   background-image: url('/assets/images/dmitry-demidko-OG3A-ilG8AY-unsplash.jpg');
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position-y: 10%;
+   background-size: cover;
+   vertical-align: middle;
+}
+
+@media screen and (max-width: 480px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+}
+
+.bit-image-register{
+    text-decoration: none;
+    border-style: solid;
+    border: 1px 1px 1px 1px;
+    border-width: thin;
+    border-color: black;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    padding: 10px 10px 15px 15px;
+    margin-right: 15px;
+}
+
+.bit-image-login{
+    text-decoration: none;
+    border-style: solid;
+    border: 1px 1px 1px 1px;
+    border-width: thin;
+    border-color: white;
+    font-size: medium;
+    color: black;
+    background: white;
+    padding: 10px 10px 15px 15px;
+}
+
+.heading{
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+    
+    
+}
+
+
+
+.bitcoin-img{
+    display : flex;
+    margin-top : 150px;
+    width: 90%;
+    justify-content: center;
+    margin: 5%;
+    z-index: 6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    
+}
+@media screen and (max-width: 480px) {
+    .bitcoin-img{
+        flex-direction: column;
+    }
+    .image-2{
+        min-width: 100%;
+    }
+
+    .bitcoin-heading{
+        min-width: 100%;
+    }
+    .heading{
+        font-size: 14px;
+    }
+    
+}
+
+.image-2{
+   max-width: 50%;
+    height: fit-content;
+}
+
+.bitcoin-heading{
+    max-width: 50%;
+    overflow: hidden;
+    max-height: fit-content;
+    background-color: #13161f;
+    
+   height: 100%;
+   
+}
+
+.bitcoin-heading h1{
+     font-size: 3vw;
+     font-weight: bold;
+     margin-left: 15%;
+     color: white;
+     margin-top: 50px;
+     align-content: flex-start;
+    
+}
+
+.bitcoin-heading p{
+    margin-top: 30px;
+    line-height: 30px;
+    color :white;
+    letter-spacing: 1px;
+    align-content: flex-start;
+    flex-flow: column wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: sans-serif
+}
+
+.bitcoin-heading a{
+    position: inherit;
+    color: whitesmoke;
+    background-color: red;
+    display: block;
+    padding-left: 3px;
+    padding-top: 6px;
+    padding-right: 3px;
+    padding-bottom: 6px ;
+    text-decoration: none;
+    min-width:15%;
+    max-width:15%;
+    text-align:center;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-bottom: 18px;
+    word-break: break-word;
+}
+
+.bitcoin-heading a:hover{
+    background-color: rgb(184, 10, 68);
+}
+
+.links{
+    position: relative;
+    height: 400px;
+    background-color: rgb(41,40,40);
+    margin-top: 400px;
+    text-align: center;
+}
+.links .division{
+    width :15%;
+    background-color: rgb(41, 40, 40);
+    padding: 0px;
+    height: 100%;
+    margin-left: 10%;
+}
+.links .a1,.a2,.a3,.a4{
+    padding: 10px;
+    display: block;
+   color: white;
+   text-decoration: none;
+   margin-top: 35%;
+   
+}
+
+.division label{
+  position: absolute;
+  top: 30%;
+  right: 37%;
+  font-size: 25px;
+  color : goldenrod;
+}
+
+.division .tweet,.linked,.insta{
+  position: absolute;
+  top : 40%;
+  color : white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.division .tweet{
+    right: 43%;
+}
+.division .linked{
+    right : 45%;
+}
+.division .insta{
+    right: 41%;
+}
+
+a{
+    text-decoration: none;
+}

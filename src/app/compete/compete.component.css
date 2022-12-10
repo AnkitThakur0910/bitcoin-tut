@@ -1,0 +1,10 @@
+.example-card {
+    max-width: 400px;
+    margin: 10%;
+  }
+
+  @media only screen and (max-Width: 600px) {
+    .vertical{
+      flex-direction: column;
+    }
+  }

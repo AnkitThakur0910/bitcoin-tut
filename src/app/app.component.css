@@ -1,0 +1,13 @@
+span{
+    flex-grow: 1;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.active{
+    color: grey;
+}
+
+.elev{
+    background-color: orange;
+}
